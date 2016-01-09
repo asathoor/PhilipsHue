@@ -51,7 +51,7 @@ class Lamper:
         print "Lamps = OFF"
         try:
             self.taend = json.dumps({"on":False})
-            self.r = requests.put("http://192.168.0.11/api/1502fff762d0210d512f70a372152f85/groups/0/action", data=self.taend)
+            self.r = requests.put("http://192.168.0.xxx/api/xxxxxxxxxxxxxxxxxxxxxxxxxxxxx/groups/0/action", data=self.taend)
 
         except ValueError:
             print "some error happened"
@@ -62,7 +62,7 @@ class Lamper:
         print "Lamps = ON"
         try:
             self.taend = json.dumps({"on":True})
-            self.r = requests.put("http://192.168.0.11/api/1502fff762d0210d512f70a372152f85/groups/0/action", data=self.taend)
+            self.r = requests.put("http://192.168.0.xxx/api/xxxxxxxxxxxxxxxxxxxxxxxxxxxxx/groups/0/action", data=self.taend)
 
         except ValueError:
             print "some error happened"
